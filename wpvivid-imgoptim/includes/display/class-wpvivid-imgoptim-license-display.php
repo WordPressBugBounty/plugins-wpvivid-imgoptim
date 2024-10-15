@@ -36,7 +36,6 @@ class WPvivid_ImgOptim_license_Display
 
                 <p>
                     <input id="wpvivid_sign_up_btn" type="submit" class="button action top-action" value="Create a free account">
-                    <span> ,or <a href="https://wpvivid.com/join">try out the pro version</a></span>
                     <span class="spinner" id="wpvivid_sign_up_progress" style="float: none;margin:0px;display: none"></span>
                 </p>
 

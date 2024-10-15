@@ -1079,13 +1079,17 @@ class WPvivid_ImgOptim
                 <div class="postbox  wpvivid-sidebar">
                     <div style="padding:1em 1em 1em 1em;">
                         <div style="background:#eaf1fe;border-radius:0.4em; padding:1em;">
-                            <h3 style="text-align:center;">Trial For 14 Days</h3>
+                            <h3 style="text-align:center;">Free AVIF & WEBP Converter Plugin</h3>
 
-                            <p><span style="color:#7cda24;">✔</span><span> Backup & Migration Pro</span></p>
-                            <p><span style="color:#7cda24;">✔</span><span> Image Optimization Pro</span></p>
-                            <p><span style="color:#7cda24;">✔</span><span> Staging & Dev Environment Pro</span></p>
-                            <p style="text-align:center;"><span style="display:block;padding:0.5em 1em; background:#8300e9;cursor:pointer;border-radius:0.5em;"><a style="color:#fff;text-decoration: none;" href="https://wpvivid.com/pricing">Get Started</a></span></p>
-                            <p style="text-align:center;"><i>(*No credit card needed)</i></p>
+                            <p><span class="dashicons dashicons-saved wpvivid-dashicons-green"></span><span> Convert AVIF & Compress AVIF</span></p>
+                            <p><span class="dashicons dashicons-saved wpvivid-dashicons-green"></span><span> Convert WebP & Compress WebP</span></p>
+                            <p><span class="dashicons dashicons-saved wpvivid-dashicons-green"></span><span> Exclude/Custom Folders</span></p>
+                            <p><span class="dashicons dashicons-saved wpvivid-dashicons-green"></span><span> Auto-Process New Images</span></p>
+                            <p><span class="dashicons dashicons-saved wpvivid-dashicons-green"></span><span> Auto-Remove Large Images</span></p>
+                            <p><span class="dashicons dashicons-saved wpvivid-dashicons-green"></span><span> Restore Original Images</span></p>
+                            <p><span class="dashicons dashicons-saved wpvivid-dashicons-green"></span><span> 100% Free Plugin</span></p>
+                            <p style="text-align:center;"><span style="display:block;padding:0.5em 1em; background:#8300e9;cursor:pointer;border-radius:0.2em;"><a style="color:#fff;text-decoration: none;" href="https://wordpress.org/plugins/compressx/">Download from Wordpress.org</a></span></p>
+
                         </div>
                     </div>
                     <h2 style="margin-top:0.5em;">

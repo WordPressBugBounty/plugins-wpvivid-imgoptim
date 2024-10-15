@@ -489,8 +489,7 @@ class WPvivid_Lazy_Load
 
             $options=get_option('wpvivid_optimization_options',array());
             $animation=isset($options['lazyload']['animation'])?$options['lazyload']['animation']:'fadein';
-            $placeholder='';
-
+            $placeholder = str_replace( ' ', '%20', "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 0 0'%3E%3C/svg%3E" );
             $this->add_attribute( $new_image, 'src', $placeholder);
         }
 
