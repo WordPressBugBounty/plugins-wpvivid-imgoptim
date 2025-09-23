@@ -389,6 +389,17 @@ class WPvivid_ImgOptim_Setting
             $is_auto='';
         }
 
+        $skip_fluent_pic=isset($options['skip_fluent_pic'])?$options['skip_fluent_pic']:false;
+
+        if($skip_fluent_pic)
+        {
+            $skip_fluent_pic='checked';
+        }
+        else
+        {
+            $skip_fluent_pic='';
+        }
+
         $backup=isset($options['backup'])?$options['backup']:true;
 
         if($backup)
@@ -539,6 +550,20 @@ class WPvivid_ImgOptim_Setting
                     </div>
                 </td>
             </tr>
+            <tr>
+                <td class="row-title" style="min-width:200px;">
+                    <label for="tablecell"><?php esc_html_e('Exclude images uploaded by FluentCRM','wpvivid-imgoptim')?></label>
+                </td>
+                <td>
+                    <div>
+                        <label class="wpvivid-checkbox">
+                            <span><?php esc_html_e('When enabled, this option will prevent images uploaded via the FluentCRM plugin from being optimized. This ensures they display correctly in email clients that do not support WebP format','wpvivid-imgoptim')?></span>
+                            <input type="checkbox" option="setting" name="skip_fluent_pic" <?php echo esc_attr($skip_fluent_pic); ?> />
+                            <span class="wpvivid-checkbox-checkmark"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
         </table>
 
         <br>
@@ -592,6 +617,9 @@ class WPvivid_ImgOptim_Setting
 
         if(isset($setting['auto_optimize']))
             $options['auto_optimize']=$setting['auto_optimize'];
+
+        if(isset($setting['skip_fluent_pic']))
+            $options['skip_fluent_pic']=$setting['skip_fluent_pic'];
 
         if(isset($setting['keep_exif']))
             $options['keep_exif']=$setting['keep_exif'];

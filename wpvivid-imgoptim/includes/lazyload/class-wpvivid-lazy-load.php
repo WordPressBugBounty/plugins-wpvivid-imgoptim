@@ -140,8 +140,11 @@ class WPvivid_Lazy_Load
 
         foreach ( $images as $image )
         {
-            $tag     = $this->parse_image( $image );
-            $content = str_replace( $image['tag'], $tag, $content );
+            if(isset($image['src']['src']))
+            {
+                $tag     = $this->parse_image( $image );
+                $content = str_replace( $image['tag'], $tag, $content );
+            }
         }
         return $content;
     }

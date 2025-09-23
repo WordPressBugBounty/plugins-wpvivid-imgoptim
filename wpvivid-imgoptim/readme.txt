@@ -2,9 +2,9 @@
 Contributors: imgoptim, wpvividplugins
 Tags: optimize images, compress images, resize images, lazy load images, reduce image size,
 Requires at least: 5.1
-Tested up to: 6.6.2
+Tested up to: 6.8.2
 Requires PHP: 5.3
-Stable tag: 0.9.23
+Stable tag: 0.9.24
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -100,6 +100,10 @@ The optimized images list is saved in the postmeta table in your WordPress datab
 Feel free to let us know how we can help using the [support forum](https://wordpress.org/support/plugin/wpvivid-imgoptim/) for WPvivid Image Optimization plugin on WordPress.org or our [contact form](https://wpvivid.com/contact-us).
 
 == Changelog ==
+= 0.9.24 =
+- Added a setting to exclude images uploaded via FluentCRM plugin from being optimized.
+- Fixed some lazy loading warnings in PHP error logs in some environments.
+- Successfully tested with WordPress 6.8.2.
 = 0.9.23 =
 - Fixed: In some environments, images would not display properly when lazyloading was enabled.
 - Optimized the plugin code.

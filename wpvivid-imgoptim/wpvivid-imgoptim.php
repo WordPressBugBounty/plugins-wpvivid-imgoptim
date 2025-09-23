@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name:       WPvivid Imgoptim Free
  * Description:       Optimize, compress and resize images in WordPress in bulk. Automatic image optimization, auto resize images upon upload.
- * Version:           0.9.23
+ * Version:           0.9.24
  * Author:            WPvivid Team
  * Author URI:        https://wpvivid.com
  * License:           GPL-3.0+
@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'WPVIVID_IMGOPTIM_VERSION', '0.9.23' );
+define( 'WPVIVID_IMGOPTIM_VERSION', '0.9.24' );
 
 define( 'WPVIVID_IMGOPTIM_SLUG', 'WPvivid_ImgOptim' );
 define( 'WPVIVID_IMGOPTIM_NAME', plugin_basename( __FILE__ ) );

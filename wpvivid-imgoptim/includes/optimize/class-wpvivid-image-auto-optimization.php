@@ -60,13 +60,43 @@ class WPvivid_Image_Auto_Optimization
         return $metadata;
     }
 
+    public function is_fluentcrm_referer()
+    {
+        $options=get_option('wpvivid_optimization_options',array());
+
+        if(isset($options['skip_fluent_pic']) && $options['skip_fluent_pic'])
+        {
+            $referer = '';
+            if (!empty($_REQUEST['_wp_http_referer'])) {
+                $referer = $_REQUEST['_wp_http_referer'];
+            } elseif (!empty($_SERVER['HTTP_REFERER'])) {
+                $referer = $_SERVER['HTTP_REFERER'];
+            }
+            if ($referer && strpos($referer, 'page=fluentcrm-admin') !== false)
+            {
+                $is_fluent_pic=true;
+            }
+            else
+            {
+                $is_fluent_pic=false;
+            }
+        }
+        else
+        {
+            $is_fluent_pic=false;
+        }
+        return $is_fluent_pic;
+    }
+
     public function auto_optimize($metadata, $attachment_id)
     {
         set_time_limit(300);
 
         $is_auto=apply_filters('wpvivid_allowed_image_auto_optimization',false);
 
-        if($is_auto)
+        $is_fluent_pic = $this->is_fluentcrm_referer();
+
+        if($is_auto && !$is_fluent_pic)
         {
             if(isset($this->auto_opt_ids[$attachment_id])&&$this->auto_opt_ids[$attachment_id])
             {
