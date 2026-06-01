@@ -1442,8 +1442,8 @@ class WPvivid_ImgOptim_Display
                 </fieldset>
             </div>
             <div style="width:50%;margin:auto;">
-                <input class="button-primary" style="width: 200px; height: 50px; font-size: 20px; margin-bottom: 10px; pointer-events: auto; opacity: 1;" id="wpvivid_start_opt" type="submit" value="Optimize Now">
-                <input class="button-primary" style="display:none;width: 200px; height: 50px; font-size: 20px; margin-bottom: 10px; pointer-events: auto; opacity: 1;" id="wpvivid_cancel_opt" type="submit" value="Cancel">
+                <input class="button-primary" style="width: 200px; font-size: 20px; margin-bottom: 10px; pointer-events: auto; opacity: 1;" id="wpvivid_start_opt" type="submit" value="Optimize Now">
+                <input class="button-primary" style="display:none;width: 200px; font-size: 20px; margin-bottom: 10px; pointer-events: auto; opacity: 1;" id="wpvivid_cancel_opt" type="submit" value="Cancel">
             </div>
             <div>
                 <p style="text-align:center;">Recommended: <a href="<?php echo esc_url($url);?>">Backup the website</a> before optimizing images
